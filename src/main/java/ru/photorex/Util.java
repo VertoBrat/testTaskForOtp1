@@ -9,6 +9,8 @@ public class Util {
 
         String[] array = ip.split("\\.");
 
+        if (array.length < 4) return false;
+
         try {
             for (String a : array)
                 Integer.parseInt(a);
